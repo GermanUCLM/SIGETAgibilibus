@@ -135,4 +135,43 @@ body {
       display: none
     }
 
+	form input[type="email"]:required:valid{
+	 border:2px solid green;
+	}
+	
+	form input[type="email"]:required:invalid{
+	 border:2px solid red;
+	}
 
+	form input[type="text"]:required:valid{
+	 border:2px solid green;
+	}
+	
+	form input[type="text"]:required:invalid{
+	 border:2px solid red;
+	}
+	
+	form input[type="password"]:required:valid{
+	 border:2px solid green;
+	}
+	
+	form input[type="password"]:required:invalid{
+	 border:2px solid red;
+	}	
+	
+	form input[type="date"]:required:valid{
+	 border:2px solid green;
+	}
+	
+	form input[type="date"]:required:invalid{
+	 border:2px solid red;
+	}
+	
+	form input[type="number"]:required:valid{
+	 border:2px solid green;
+	}
+	
+	form input[type="number"]:required:invalid{
+	 border:2px solid red;
+	}
+	

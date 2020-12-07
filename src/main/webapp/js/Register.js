@@ -33,6 +33,16 @@ $(document).ready(function() {
     });
 });
 
+const email = document.getElementById("userMail");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    email.setCustomValidity("¡Se esperaba una dirección de correo electrónico!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
+
     function comprobar(){
         var mail1 = $("#userMail").val();
         var username = $("#userName").val();
@@ -109,7 +119,7 @@ $(document).ready(function() {
                 default:
                     alert('El campo ' +campo +' está vacio');
             }
-            valido=false;
+            valido = false;
         }
         return valido;
       };
