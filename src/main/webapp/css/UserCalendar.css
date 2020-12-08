@@ -24,6 +24,17 @@ body {
 	font-size: 15px;
 }
 
+@media (max-width: 767.98px){
+	.container{
+	   height: 100px;
+	}
+	.rigth{
+	   top: 40px;
+	}
+	.left{
+	   top:20px;
+	}
+}​​
 .sidenav {
 	height: 100%;
 	width: 0;
