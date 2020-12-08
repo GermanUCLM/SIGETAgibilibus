@@ -281,6 +281,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
     border-bottom-left-radius: 0;
   }
 .fc .fc-toolbar {
+	display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -292,7 +293,7 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   }
 .fc .fc-toolbar-title {
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     margin: 0;
   }
 .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
@@ -1428,4 +1429,13 @@ A VERTICAL event
   }
   
 
+@media (max-width: 767.98px) {
+    .fc .fc-toolbar.fc-header-toolbar {
+        display: block;
+        text-align: center;
+    }
 
+    .fc-header-toolbar .fc-toolbar-chunk {
+        display: block;
+    }
+}
