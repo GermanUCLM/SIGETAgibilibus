@@ -145,7 +145,21 @@ tbody tr td a:hover{
         
 .btn{
 	width: 120px;
+	font-size: 15px;
+	margin-bottom: 50px;
 }
+
+form input:required {
+       border:2px solid red;
+    }
+    
+    form input:focus:invalid{
+        border:2px solid red;
+    }
+    
+    form input:valid{
+        border:2px solid green;
+    }
 	
  @media (max-width: 767.98px) {
 	.col{
