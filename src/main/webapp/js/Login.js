@@ -24,7 +24,11 @@ $("#login").click(function(){
 				window.location.href = "UserCalendar.html";
 			},
 			error : function(response) {
-				alert(response.message);
+				alert("Contraseña y/o usuario incorrectos");
+				pass = document.getElementById("pass");
+				username = document.getElementById("username");
+				pass.style.border = "2px solid red";
+				username.style.border = "2px solid red";
 			}
 		};
 		$.ajax(data);
