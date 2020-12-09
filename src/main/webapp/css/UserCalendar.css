@@ -25,16 +25,38 @@ body {
 }
 
 @media (max-width: 767.98px){
-	.container{
+	
+​	.container{
 	   height: 100px;
 	}
-	.rigth{
+	.right{
 	   top: 40px;
 	}
 	.left{
-	   top:20px;
+	   top:0px;
 	}
-}​​
+	.dropdown-toggle{
+	background-color: #111;
+	
+	}
+    .dropdown-toggle, .open{
+    background-color: #111;
+    z-index:3;
+    }
+    .dropdown{
+    background-color: #111;
+    display: inline;
+    }
+    .container-fluid{
+      background-color: #111;
+    }
+    
+    .navbar-brand{
+    height: 150px;
+    }
+}
+
+
 .sidenav {
 	height: 100%;
 	width: 0;
