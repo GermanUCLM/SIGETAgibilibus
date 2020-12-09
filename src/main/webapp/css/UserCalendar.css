@@ -19,7 +19,7 @@ body {
 .right {
 	position: absolute;
 	top: 10px;
-	right: 63px;
+	right: 20px;
 	font-weight: bold;
 	font-size: 15px;
 }
@@ -30,14 +30,13 @@ body {
 	   height: 100px;
 	}
 	.right{
-	   top: 40px;
+	   top: 0px;
 	}
 	.left{
 	   top:0px;
 	}
 	.dropdown-toggle{
 	background-color: #111;
-	
 	}
     .dropdown-toggle, .open{
     background-color: #111;
@@ -52,8 +51,9 @@ body {
     }
     
     .navbar-brand{
-    height: 150px;
+    height: 100px;
     }
+  
 }
 
 
