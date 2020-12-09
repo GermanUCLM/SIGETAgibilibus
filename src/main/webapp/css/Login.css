@@ -1,7 +1,8 @@
 body {
             background: url('../recursos/cielo.jpg') center no-repeat;
-            min-height:100%;
-            background-size:cover;
+            height:auto;
+            width:100%;
+            background-size:full;
         }
         ul, li {
             margin:0;
@@ -17,7 +18,10 @@ body {
             border-bottom-color:#bfc9dc;
             box-shadow:0 1px 1px #ccc;
             border-radius:5px;
-            position:relative;
+            position:absolute;
+            top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
         }
         h2 {
             margin:0;
@@ -42,3 +46,14 @@ body {
         .customSpan {
             margin:0 0 4px 4px;  
         }
+        
+        @media (max-width: 767.98px) {
+         #username,#pass{
+            margin-left:2%;
+            
+        }
+        .flexContainer{
+        	
+       		margin-left:50px;
+        }
+}
