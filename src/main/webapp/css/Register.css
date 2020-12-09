@@ -135,13 +135,11 @@ tbody tr td a:hover{
 	border: 1px solid grey !important;
 }
 
-#userTelf:focus, #userMail:focus, #pwd1:focus, #pwd2:focus, #userDate:focus{
+#userTelf:focus, #userMail:focus, #pwd1:focus, #pwd2:focus, #userDate:focus, #mail2:focus{
 	border: 1px solid grey !important;
 }
         
-        
-        
-#userCompletName, #userDni, #userApellidos, #userTelf, #userMail, #pwd1, #pwd2, #userDate{
+#userCompletName, #userDni, #userName, #userApellidos, #userTelf, #userMail, #pwd1, #pwd2, #userDate, #mail2{
 	border: 1px solid grey;
 }
         
