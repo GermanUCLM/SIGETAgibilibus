@@ -34,12 +34,14 @@ $(document).ready(function() {
 });
 
     function comprobar(){
+    	restaurarSenalizacion();
         var mail1 = $("#userMail").val();
         var username = $("#userName").val();
         var pass=$("#pwd1").val();
         var pass2=$("#pwd2").val();
         var mail2=$("#mail2").val();
-        if(false!=(validarCampo("userMail") && validarCampo("userName") && validarCampo("pwd1")&& validarCampo("mail2") && validarCampo("userCompletName") && validarCampo("userApellidos") && validarCampo("userTelf")&& validarCampo("userDate"))){        
+        
+     if(false!=(validarCampo("userMail") && validarCampo("userName") && validarCampo("pwd1")&& validarCampo("mail2") && validarCampo("userCompletName") && validarCampo("userApellidos") && validarCampo("userTelf")&& validarCampo("userDate")&& validarCampo("userDni")&& validarCampo("pwd2"))){        
         	if(pass!==pass2){
         		alert("Las contraseñas no puede ser distintas");
         	}else if(mail1!==mail2){
@@ -52,8 +54,23 @@ $(document).ready(function() {
         	else 
         		register();
         		
-        }	        
+        }	 
     }
+    
+    function restaurarSenalizacion(){
+    	document.getElementById("userCompletName").style.border = "1px solid grey";
+    	document.getElementById("userName").style.border = "1px solid grey";
+    	document.getElementById("userDni").style.border = "1px solid grey";
+    	document.getElementById("userApellidos").style.border = "1px solid grey";
+    	document.getElementById("userTelf").style.border = "1px solid grey";
+    	document.getElementById("userMail").style.border = "1px solid grey";
+    	document.getElementById("pwd1").style.border = "1px solid grey";
+    	document.getElementById("pwd2").style.border = "1px solid grey";
+    	document.getElementById("userDate").style.border = "1px solid grey";
+    	document.getElementById("mail2").style.border = "1px solid grey";
+    	
+    }
+    
     function fechaCorrecta() {// el emleado tiene al menos 16 años
 	    var correcto = new Boolean(true); 
 	    var fecha=$("#userDate").val();
@@ -79,32 +96,42 @@ $(document).ready(function() {
             switch(String(campo)){
                 case 'userCompletName':
                     alert('El nombre completo no puede estar vacío');
+                    document.getElementById("userCompletName").style.border = "2px solid red";
                     break;
                 case 'userDni':
                     alert('El DNI no puede estar vacío');
+                    document.getElementById("userDni").style.border = "2px solid red";
                     break;
                 case 'userName':
                     alert('El nombre no puede estar vacío');
+                    document.getElementById("userName").style.border = "2px solid red";
                     break;
                 case 'userApellidos':
                     alert('El apellido no puede estar vacío');
+                    document.getElementById("userApellidos").style.border = "2px solid red";
                     break;
                 case 'userTelf':
                     alert('El teléfono no puede estar vacío');
+                    document.getElementById("userTelf").style.border = "2px solid red";
                     break;
                 case 'userMail':
                     alert('El email no puede estar vacío');
+                    document.getElementById("userMail").style.border = "2px solid red";
                     break;
                 case 'pwd1':
                     alert('La contraseña no puede estar vacía');
+                    document.getElementById("pwd1").style.border = "2px solid red";
                 case 'pwd2':
                     alert('La confirmación de la contraseña no puede estar vacía');
+                    document.getElementById("pwd2").style.border = "2px solid red";
                     break;
                 case 'userDate':
                     alert('La fecha de nacimiento no puede estar vacía');
+                    document.getElementById("userDate").style.border = "2px solid red";
                     break;
                 case 'mail2':
                     alert('La confirmación del email no puede estar vacía');
+                    document.getElementById("mail2").style.border = "2px solid red";
                     break;
                 default:
                     alert('El campo ' +campo +' está vacio');
