@@ -48,12 +48,12 @@ body {
         }
         
         @media (max-width: 767.98px) {
-         #username,#pass{
-            margin-left:2%;
-            
-        }
-        .flexContainer{
-        	
-       		margin-left:50px;
-        }
-}
+	         #username,#pass{
+	            margin-left:2%;
+	            
+	        }
+	        .flexContainer{
+	        	
+	       		margin-left:50px;
+	        }
+		}
