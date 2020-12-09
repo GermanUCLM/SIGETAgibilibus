@@ -130,15 +130,21 @@ tbody tr td a:hover{
 #table_length, #table_filter, #table_info, #table_paginate{
 	display: none
 }
-form input:required {
-    border:2px solid #AED6F1;
+
+#userCompletName:focus, #userDni:focus, #userApellidos:focus{
+	border: 1px solid grey !important;
 }
-form input:focus:invalid{
-    border:2px solid red;
+
+#userTelf:focus, #userMail:focus, #pwd1:focus, #pwd2:focus, #userDate:focus{
+	border: 1px solid grey !important;
 }
-form input:valid{
-    border:2px solid green;
+        
+        
+        
+#userCompletName, #userDni, #userApellidos, #userTelf, #userMail, #pwd1, #pwd2, #userDate{
+	border: 1px solid grey;
 }
+        
 .btn{
 	width: 120px;
 }
