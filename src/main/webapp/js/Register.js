@@ -76,8 +76,40 @@ $(document).ready(function() {
     function validarCampo(campo) { // comprobar que no hay campos vacios
         var valido = new Boolean(true); 
         if (document.getElementById(campo).value == '') {
-          alert('El campo ' +campo +' está vacio');
-            valido=false;
+            switch(String(campo)){
+                case 'userCompletName':
+                    alert('El nombre completo no puede estar vacío');
+                    break;
+                case 'userDni':
+                    alert('El DNI no puede estar vacío');
+                    break;
+                case 'userName':
+                    alert('El nombre no puede estar vacío');
+                    break;
+                case 'userApellidos':
+                    alert('El apellido no puede estar vacío');
+                    break;
+                case 'userTelf':
+                    alert('El teléfono no puede estar vacío');
+                    break;
+                case 'userMail':
+                    alert('El email no puede estar vacío');
+                    break;
+                case 'pwd1':
+                    alert('La contraseña no puede estar vacía');
+                case 'pwd2':
+                    alert('La confirmación de la contraseña no puede estar vacía');
+                    break;
+                case 'userDate':
+                    alert('La fecha de nacimiento no puede estar vacía');
+                    break;
+                case 'mail2':
+                    alert('La confirmación del email no puede estar vacía');
+                    break;
+                default:
+                    alert('El campo ' +campo +' está vacio');
+            }
+            valido = false;
         }
         return valido;
       };

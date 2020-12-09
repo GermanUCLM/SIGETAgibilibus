@@ -20,7 +20,7 @@
     </a>
   </div>  
 </nav>
-
+ 
 <br>
 <br>
 
@@ -35,27 +35,27 @@
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">DNI:</label>
               <div class="col-sm-3">
-                  <input type="text" class="form-control" id="userDni"  >
+                  <input required type="text" class="form-control" id="userDni"  >
               </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Nombre:</label>
               <div class="col-sm-3">
-                  <input type="text" class="form-control" id="userCompletName">
+                  <input required type="text" class="form-control" id="userCompletName">
               </div>
               <label class="col-sm-2 col-form-label">Apellidos:</label>
               <div class="col-sm-3">
-                  <input type="text" class="form-control" id="userApellidos" required="true">
+                  <input required type="text" class="form-control" id="userApellidos" required="true">
               </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label">Teléfono:</label>
               <div class="col-sm-3">
-                  <input type="number" class="form-control" id="userTelf" required="true" >
+                  <input required type="number" class="form-control" id="userTelf" required="true" >
               </div>
             <label class="col-sm-2 col-form-label">Fecha de Nacimiento:</label>
               <div class="col-sm-3">
-                  <input type="date" class="form-control" id="userDate" required="true">
+                  <input required type="date" class="form-control" id="userDate" required="true">
               </div>
           </div>
 	  	</form>
@@ -69,17 +69,17 @@
         <div class="form-group row">
           <label class="col-sm-2 col-form-label">Nombre de Usuario:</label>
             <div class="col-sm-3">
-                <input type="text" class="form-control" id= "userName">
+                <input required type="text" class="form-control" id= "userName">
             </div>
         </div>
         <div class="form-group row" id=userData>
           <label class="col-sm-2 col-form-label" >Contraseña:</label>
             <div class="col-sm-3">
-                <input  type="password" id="pwd1" class="form-control">
+                <input required  type="password" id="pwd1" class="form-control">
             </div>
-            <label class="col-sm-2 col-form-label">Validar:</label>
+            <label class="col-sm-2 col-form-label">Repetir Contraseña:</label>
             <div class="col-sm-3">
-                <input type="password" class="form-control" id="pwd2">
+                <input required type="password" class="form-control" id="pwd2">
             </div>
             <div id="alertPass">
               <h6><strong>La contraseña debe tener los siguientes requisitos:</strong></h6>
@@ -94,11 +94,11 @@
         <div class="form-group row">
           <label class="col-sm-2 col-form-label">E-mail:</label>
             <div class="col-sm-3">
-                <input type="email" class="form-control" id="userMail">
+                <input required type="email" class="form-control" id="userMail">
             </div>
-          <label class="col-sm-2 col-form-label">Validar:</label>
+          <label class="col-sm-2 col-form-label">Repetir E-mail:</label>
             <div class="col-sm-3">
-                <input type="email" class="form-control" id="mail2">
+                <input required type="email" class="form-control" id="mail2">
             </div>
         </div>
       </form>
