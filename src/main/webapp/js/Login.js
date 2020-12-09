@@ -24,7 +24,7 @@ $("#login").click(function(){
 				window.location.href = "UserCalendar.html";
 			},
 			error : function(response) {
-				alert(response.message);
+				alert("Contraseña y/o usuario incorrectos");
 			}
 		};
 		$.ajax(data);
