@@ -3,19 +3,19 @@ body {
     background-attachment: fixed;
     background-size: cover;
     min-height:100%;
-  }
+}
 
-  .container{
-      height: 60px;
-  }
+.container{
+    height: 60px;
+}
 
-  .left {
-      position: absolute;
-      top: 0px; 
-      left: 10px;
-  }  
+.left {
+    position: absolute;
+    top: 0px; 
+    left: 10px;
+}  
 
-  .right {
+.right {
 	position: absolute;
     top: 20px;
 	right: 63px;
@@ -23,116 +23,119 @@ body {
 	font-size: 15px;
 }
   
-  ul, li {
-      margin:0;
-      padding:0;
-      list-style-type:none;
-  }
-  #container {
-      width:400px;
-      height:290px;
-      background:#fefefe;
-      margin:auto;  
-      border-top-color:#d3dbde;
-      border-bottom-color:#bfc9dc;
-      box-shadow:0 1px 1px #ccc;
-      border-radius:5px;
-      position:relative;
-  }
-  h2 {
-      margin:0;
-      padding:10px 0;
-      font-size:24px;
-      text-align:center;
-      background:#eff4f7;
-      border-bottom:1px solid #dde0e7;
-      box-shadow:0 -1px 0 #fff inset;
-      border-radius:5px 5px 0 0; /* otherwise we get some uncut corners with container div */
-      text-shadow:1px 1px 0 #fff;
-  }
-  #alertPass {
-      position: absolute;
-      bottom:100px;
-      right:425px;
-      width:300px;
-      padding:15px;
-      background:#fefefe;
-      font-size:.875em;
-      border-radius:5px;
-      box-shadow:0 1px 3px #ccc;
-      border:1px solid #ddd;
-      display:none
-  }
-  #alertPass::before {
-      content: "\025C4";
-      position:absolute;
-      top:130px;
-      left: -4%;
-      font-size:14px;
-      line-height:14px;
-      color:#ddd;
-      text-shadow:none;
-      display:block;
-  }
-  #alertPass h5 {
-      margin:0 0 10px 0;
-      padding:0;
-      font-weight:normal;
-  }
-  .invalid {
-      background:url('../recursos/Eliminar.png') no-repeat 0 50%;
-      padding-left:22px;
-      line-height:24px;
-      color:#ec3f41;
-  }
-  .valid {
-      background:url('../recursos/tick.png') no-repeat 0 50%;
-      padding-left:22px;
-      line-height:24px;
-      color:#3a7d34;
-  }
-    
-  #input-search{
-    width: 180px;
-    height: 30px;
-    font-size: 10px;
-    text-indent: 10px;
-  }
-  
-  .content-search{
-      position: fixed;
-      top: 71px;
-      left:0;
-      display: none;
-  }
+ul, li {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
 
-  .content-table{
-      width: 23%;
-      max-height: 170px;
-      height: auto;
-      background: rgba(167, 214, 210, 0.3);
-      margin-left: 1020px;
-      overflow-y: visible;
-      overflow-x: hidden;
-  }
-  
-  .content-table table{
-      width: 100%;
-  }
+#container {
+    width:400px;
+    height:290px;
+    background:#fefefe;
+    margin:auto;  
+    border-top-color:#d3dbde;
+    border-bottom-color:#bfc9dc;
+    box-shadow:0 1px 1px #ccc;
+    border-radius:5px;
+    position:relative;
+}
 
-  tbody tr td a{
-      display: block;
-      padding: 10px;
-      color: black;
-      text-decoration: none;
-  }
+h2 {
+    margin:0;
+    padding:10px 0;
+    font-size:24px;
+    text-align:center;
+    background:#eff4f7;
+    border-bottom:1px solid #dde0e7;
+    box-shadow:0 -1px 0 #fff inset;
+    border-radius:5px 5px 0 0; /* otherwise we get some uncut corners with container div */
+    text-shadow:1px 1px 0 #fff;
+}
 
-  tbody tr td a:hover{
-      background: rgba(69, 73, 73, 0.3);
-  }
-
-  #table_length, #table_filter, #table_info, #table_paginate{
-      display: none
-    }
-
-
+#alertPass {
+	position: absolute;
+    bottom:100px;
+    right:425px;
+    width:300px;
+    padding:15px;
+    background:#fefefe;
+    font-size:.875em;
+    border-radius:5px;
+    box-shadow:0 1px 3px #ccc;
+    border:1px solid #ddd;
+    display:none
+}
+#alertPass::before {
+    content: "\025C4";
+    position:absolute;
+    top:130px;
+    left: -4%;
+    font-size:14px;
+    line-height:14px;
+    color:#ddd;
+    text-shadow:none;
+    display:block;
+}
+#alertPass h5 {
+    margin:0 0 10px 0;
+    padding:0;
+    font-weight:normal;
+}
+.invalid {
+    background:url('../recursos/Eliminar.png') no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#ec3f41;
+}
+.valid {
+    background:url('../recursos/tick.png') no-repeat 0 50%;
+    padding-left:22px;
+    line-height:24px;
+    color:#3a7d34;
+}
+#input-search{
+	width: 180px;
+	height: 30px;
+	font-size: 10px;
+	text-indent: 10px;
+}
+.content-search{
+    position: fixed;
+    top: 71px;
+    left:0;
+    display: none;
+}
+.content-table{
+    width: 23%;
+    max-height: 170px;
+    height: auto;
+    background: rgba(167, 214, 210, 0.3);
+    margin-left: 1020px;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+.content-table table{
+    width: 100%;
+}
+tbody tr td a{
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+tbody tr td a:hover{
+    background: rgba(69, 73, 73, 0.3);
+}
+#table_length, #table_filter, #table_info, #table_paginate{
+	display: none
+}
+form input:required {
+    border:2px solid #AED6F1;
+}
+form input:focus:invalid{
+    border:2px solid red;
+}
+form input:valid{
+    border:2px solid green;
+}
