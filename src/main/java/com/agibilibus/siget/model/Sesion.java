@@ -47,8 +47,6 @@ public class Sesion {
 
 			if (optUser.isPresent()) {
 				Usuario user = optUser.get();
-				System.out.println("Contraseña logeo: "+pwd);
-				System.out.println("Contraseña real: "+user.getPassword());
 				if (user.getPassword().equals(pwd)) {
 					correcto = true;
 					Sesion sesion = new Sesion(user, httpSession);

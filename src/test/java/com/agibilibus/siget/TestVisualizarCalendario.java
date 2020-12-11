@@ -10,7 +10,6 @@ import static org.junit.Assert.fail;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.servlet.http.HttpSession;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +25,7 @@ import com.agibilibus.siget.model.Reunion;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class TestVisualizarCalendario {
+class TestVisualizarCalendario {
 	
 	/*
 	@Autowired
@@ -58,8 +57,8 @@ public class TestVisualizarCalendario {
 	public void testUsuarioSinReuniones() throws JSONException {
 	
 		Map<String, Object> credenciales = new HashMap<String, Object>();
-		credenciales.put("userName", "Elisa");
-		credenciales.put("pwd", "Seguridad2020");
+		credenciales.put("userName", "victor");
+		credenciales.put("pwd", "Victor123");
 
 		try {
 			controller.login(sesion, credenciales);
@@ -70,7 +69,7 @@ public class TestVisualizarCalendario {
 		Assert.assertEquals(0, reuniones.length());
 	}
 	
-	/*
+
 	@Test
 	public void testVisualizarDatosReunion () throws JSONException, Exception {
 		
@@ -90,7 +89,6 @@ public class TestVisualizarCalendario {
 		Assert.assertEquals(reunionjso.getString("id"), reunion.toJSON().getString("id"));
 
 	}
-	*/
 	
 }
 	
