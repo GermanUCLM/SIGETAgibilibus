@@ -19,7 +19,7 @@ import com.agibilibus.siget.model.Usuario;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class TestLogin {
+public class TestLogin {
 	
 	private static Controller controller = new Controller();
 	private static Map<String, Object> usuarioLogin = new HashMap<String, Object>();
@@ -28,7 +28,7 @@ class TestLogin {
 	
 	
 	@Before
-	public static void init() throws NoSuchAlgorithmException, JSONException {
+	public void init() throws NoSuchAlgorithmException, JSONException {
 		usuarioLogin.put("userCompletName", "usuario");
 		usuarioLogin.put("userName", "usuarioLogin");
 		usuarioLogin.put("userApellidos", "login");
@@ -39,11 +39,10 @@ class TestLogin {
 		usuarioLogin.put("pwd1", "Hola1234");
 		usuarioLogin.put("id", "usuarioLogin");
 		controller.register(session, usuarioLogin);
-		System.out.println("registrando");
 	}
 	
 	@After
-	public static void liberarRecursos() {
+	public void liberarRecursos() {
 		Usuario.get().eliminarUsuario("usuarioLogin");
 	}
 	
@@ -54,17 +53,17 @@ class TestLogin {
 		Assert.assertTrue(controller.login(session, credenciales));
 	}
 	
-	@Test
+	@Test(expected = Exception.class)
 	public void testUsuarioIncorrecto() throws Exception {	
 		credenciales.put("userName", "usuarioLogi");
 		credenciales.put("pwd", "Hola1234");
-		Assert.assertFalse(controller.login(session, credenciales));
+		controller.login(session, credenciales);
 	}
-	@Test
+	@Test(expected = Exception.class)
 	public void testContraseñaIncorrecta() throws Exception {
 		credenciales.put("userName", "usuarioLogin");
 		credenciales.put("pwd", "Hola123");
-		Assert.assertFalse(controller.login(session, credenciales));
+		controller.login(session, credenciales);
 	}
 	
 
