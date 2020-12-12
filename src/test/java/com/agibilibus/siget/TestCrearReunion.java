@@ -59,14 +59,12 @@ public class TestCrearReunion {
 
 	@Test
 	public void testCrearReunion() throws Exception {
-		
 		r = controller.guardarReunion(session, reunion);
 		Assert.assertNotNull(reuniondao.findById(r.getIdReunion()));
 	}
 	
 	@Test(expected = org.springframework.dao.DuplicateKeyException.class)
 	public void testCrearReunionYaExiste() throws Exception {
-		
 		r = controller.guardarReunion(session, reunion);
 		controller.guardarReunion(session, reunion);
 	}
