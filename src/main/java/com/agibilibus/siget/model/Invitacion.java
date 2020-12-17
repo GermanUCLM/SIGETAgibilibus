@@ -114,7 +114,7 @@ public class Invitacion {
 		return jsaInvitaciones;
 	}
 
-	public String responderInvitacion(Usuario user, String idInv, boolean opcion) throws Exception {
+	public String responderInvitacion(Usuario user, String idInv, boolean opcion) {
 		Optional<Invitacion> optInv = invitaciondao.findById(idInv);
 		if (optInv.isPresent()) {
 			Invitacion inv = optInv.get();
@@ -158,7 +158,7 @@ public class Invitacion {
 			for (String correo : correosAsistentes) {
 				Optional<Usuario> a = userdao.findByEmail(correo);
 				if (a.isPresent()) {
-					Usuario usuario = a.get();
+					usuario = a.get();
 					if (!r.getAsistentes().contains(usuario)) {
 						asist.add(usuario);
 						idInv = r.getIdReunion() + usuario.getUser();
