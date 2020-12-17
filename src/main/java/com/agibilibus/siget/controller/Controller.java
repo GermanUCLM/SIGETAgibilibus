@@ -253,7 +253,7 @@ public class Controller {
 	}
 	
 	@PostMapping("/cerrarSesion")
-	public void cerrarSesion(HttpSession session) throws Exception{
+	public void cerrarSesion(HttpSession session){
 		session.invalidate();
 	}
 }
