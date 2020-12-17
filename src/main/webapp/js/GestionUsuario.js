@@ -141,7 +141,7 @@ function Delete() {
     	limpiarCampos();
 	}
 	
-};
+}
 
 function limpiarCampos(){ // resetear todos los campos
     document.getElementById("userDni").value="";
@@ -151,4 +151,4 @@ function limpiarCampos(){ // resetear todos los campos
     document.getElementById("userTelf").value="";
     document.getElementById("userMail").value="";
     document.getElementById("userRol").value="";
-};
+}
