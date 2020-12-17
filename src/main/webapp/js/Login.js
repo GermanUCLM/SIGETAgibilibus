@@ -25,8 +25,8 @@ $("#login").click(function(){
 			},
 			error : function(response) {
 				alert("Contraseña y/o usuario incorrectos");
-				pass = document.getElementById("pass");
-				username = document.getElementById("username");
+				var pass = document.getElementById("pass");
+				var username = document.getElementById("username");
 				pass.style.border = "2px solid red";
 				username.style.border = "2px solid red";
 			}
