@@ -137,12 +137,12 @@ public class Reunion {
 		jso.put("id", this.idReunion);
 		jso.put("title", this.titulo);
 		jso.put("descripcion", this.descripcion);
-		String horaInicio = this.horaInicio.toString().substring(11, 19);
+		String horaInicioS = this.horaInicio.toString().substring(11, 19);
 		String fecha = this.horaInicio.toString().substring(0, 10);
-		String horaFin = this.horaFin.toString().substring(11, 19);
+		String horaFinS = this.horaFin.toString().substring(11, 19);
 		jso.put("fecha", fecha);
-		jso.put("start", horaInicio);
-		jso.put("end", horaFin);
+		jso.put("start", horaInicioS);
+		jso.put("end", horaFinS);
 		jso.put("organizador", this.organizador.getUser());
 		for (Usuario u : this.asistentes)
 			jsaAsistentes.put(u.toJSON());
