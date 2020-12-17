@@ -121,6 +121,7 @@ $(document).ready(function() {
                 case 'pwd1':
                     alert('La contraseña no puede estar vacía');
                     document.getElementById("pwd1").style.border = "2px solid red";
+                    break;
                 case 'pwd2':
                     alert('La confirmación de la contraseña no puede estar vacía');
                     document.getElementById("pwd2").style.border = "2px solid red";
@@ -139,7 +140,7 @@ $(document).ready(function() {
             valido = false;
         }
         return valido;
-      };
+      }
       
       
     function limpiarCampos(){ // resetear todos los campos
@@ -153,7 +154,7 @@ $(document).ready(function() {
         document.getElementById("userDate").value="";
         document.getElementById("pwd2").value="";
         document.getElementById("mail2").value="";
-    };
+    }
     
     function register(){
 
