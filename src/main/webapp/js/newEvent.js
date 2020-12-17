@@ -10,11 +10,11 @@ function crear () { // se le llama cuando se da al boton crear
             
             //limpiarCampos();
         }
-    };
+    }
     $.ajax(data);
     
     
-};
+}
 function validarCampo(campo) { // comprobar que no hay campos vacios
     var valido = new Boolean(true); 
     if (document.getElementById(campo).value == '') {
@@ -22,7 +22,7 @@ function validarCampo(campo) { // comprobar que no hay campos vacios
         valido=false;
     }
     return valido;
-  };
+  }
   
 
   function fechaCorrecta() {
@@ -52,7 +52,7 @@ function limpiarCampos(){ // resetear todos los campos
     document.getElementById("descripcion").value="";
     document.getElementById("url").value="";
     document.getElementById("invitar").value="";
-};
+}
 
 function atras(){  
 	window.location.href = "UserCalendar.html";
