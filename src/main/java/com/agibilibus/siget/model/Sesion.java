@@ -46,13 +46,12 @@ public class Sesion {
 			Optional<Usuario> optUser = userdao.findById(userName);
 
 			if (optUser.isPresent()) {
-				Usuario user = optUser.get();
+				user = optUser.get();
 				if (user.getPassword().equals(pwd)) {
 					correcto = true;
 					Sesion sesion = new Sesion(user, httpSession);
 					this.connectedUsersByUserName.put(userName, user);
 					this.connectedUsersByHttpSession.put(httpSession.getId(), user);
-					this.user = user;
 					sesion.getHttpSession().setAttribute("user", user);
 
 				} else {
