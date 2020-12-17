@@ -27,7 +27,7 @@ function validarCampo(campo) { // comprobar que no hay campos vacios
 		valido = false;
 	}
 	return valido;
-};
+}
 
 function fechaCorrecta() {
     var correcto = new Boolean(true); 
@@ -71,7 +71,7 @@ function modificar() {
 	}
 		$.ajax(data);
 		document.getElementById("correos").value = "";
-	};
+	}
 
 
 function asistir() {
@@ -95,5 +95,5 @@ function asistir() {
 		window.location.href = "UserCalendar.html";
 	}
 
-};
+}
 
